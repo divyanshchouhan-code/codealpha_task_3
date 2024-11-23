@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}.heading  {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.heading h1 {
+    font-size: 40px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #8cd4e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("calculator\ bg.png"); */
+}
+.calculator form input.display-area {
+    border: 2px solid white;
+}
+.calculator {
+    
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.837) 0px 25px 50px -12px;
+
+}
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.calculator form input:hover {
+   background-color: #000000;
+}
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal {
+    width: 145px;
+}
+.calculator form input.operations {
+    color: rgb(0, 213, 255);
+}
+.calculator form input.operations2 {
+    color: rgb(255, 225, 0);
+}
+.calculator form input.equal {
+    color: rgb(246, 246, 246);
+}
+.calculator form input.equal:hover {
+    background-color: rgb(96, 244, 91);
+}
+.calculator form input.operations2:hover {
+    background-color: rgb(237, 47, 75);
+}
+
+/* 
+responsive styles */
+
+
+@media (max-width: 480px) {
+
+    .calculator {
+
+        padding: 10px;
+
+    }
+
+
+    .calculator form input {
+
+        width: 40px; 
+
+        height: 40px;
+
+        font-size: 16px; 
+
+    }
+
+
+    form .display input {
+
+        font-size: 30px; 
+
+    }
+
+
+    form input.equal {
+
+        width: 100%;
+
+    }
+
+}
